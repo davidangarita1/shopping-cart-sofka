@@ -47,13 +47,13 @@ class Phone extends Component {
         const phoneClass = isDragging ? 'ui card phone drag' : 'ui card phone';
         return connectDragSource(
             <div className={phoneClass} style={style}>
-                <div className="image"><img src="/images/phone.jpg" /></div>
+                <div className="image"><img src="/images/phone.jpg" alt="Phone" /></div>
                 <div className="content">
                     <div className="phone-name">{brand}</div>
                     <div className="meta">8G RAM, 16G memory</div>
                 </div>
                 <div className="extra content">
-                    <a>
+                    <a href={() => false}>
                         <i aria-hidden="true" className="money icon"></i>
                         $ 80
                     </a>

@@ -10,6 +10,7 @@ class MyCart extends Component {
                         <img
                             src="/images/phone.jpg"
                             className="ui mini right floated image"
+                            alt="phone"
                         />
                         <div className="header">Test_Phone</div>
                         <div className="meta">$ 80</div>
