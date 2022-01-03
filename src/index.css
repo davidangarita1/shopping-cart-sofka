@@ -67,7 +67,7 @@ h1{
   padding: .5em !important;
   cursor: pointer;
   background: #f7f7f7 !important;
-  
+
 }
 .mycart-header{
   margin-top: 20px !important;
@@ -84,10 +84,4 @@ h1{
 }
 .meta{
   font-size: 8px !important;
-}
-
-/* Drag and Drop */
-
-.drag{
-  background-color: lightblue !important;
 }

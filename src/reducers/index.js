@@ -1,5 +1,5 @@
-import { combineReducers } from 'redux'
-import phones from './phones'  // our phone reducer
+import { combineReducers } from 'redux';
+import phones from './phones';
 
 export default combineReducers({
 	phones,

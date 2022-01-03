@@ -1,10 +1,12 @@
 import React, { Component } from 'react';
-import { connect } from 'react-redux'
+import { connect } from 'react-redux';
+import 'semantic-ui-css/semantic.min.css';
 
 import '../index.css'
-import { _getPhones } from '../utils/_DATA'
-import { receivePhones } from '../actions/phones'
-import Container from './Container'
+import { _getPhones } from '../utils/_DATA';
+import { receivePhones } from '../actions/phones';
+import Container from './container';
+
 
 class App extends Component {
   componentDidMount(){
@@ -14,18 +16,12 @@ class App extends Component {
       })
   }
   render(){
-    const { phones } = this.props
-  
+ 
     return (
-      <Container phones={phones} />
+      <Container />
     );
   }
 }
 
-function mapStateToProps({phones}){
-  return{
-    phones
-  }
-}
 
-export default connect(mapStateToProps)(App);
+export default connect()(App);
